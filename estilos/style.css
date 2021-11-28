@@ -19,6 +19,7 @@ body {
     color: rgb(207, 207, 247);
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 0px;
     
 }
 .contenedor-personajes{
@@ -33,16 +34,17 @@ body {
 #boton.arriba, #boton-abajo{
     border-style: none;
     background: none;
-    
-
 
 }
-
 .row {
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
+    flex-direction: row;
 }
 .column {
     display: flex;
+    flex-flow: wrap;
     
 }
 
@@ -53,6 +55,7 @@ header{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    margin-top: 0;
     
 }
 
@@ -108,6 +111,8 @@ header{
     margin-top: 100px;
     margin-bottom: 1000px;
     transition:0.6s;
+    height: 80px;
+    width: 170px;
 }
 .button2{
 
@@ -124,6 +129,8 @@ header{
     margin-top: 100px;
     margin-bottom: 1000px;
     transition: o.7s;
+    height: 80px;
+    width: 170px;
 }
 .button2:hover{
 
@@ -161,6 +168,8 @@ header{
     margin-top: 100px;
     margin-bottom: 1000px;
     transition: o.7s;
+    height: 80px;
+    width: 160px;
 }
 .button3:hover {
     transition: 0.7s;
@@ -279,30 +288,27 @@ background-color: rgb(199, 141, 82);
     justify-content: flex-end;
 }
 .social-media-icon{
-
     display: inline-block;
-    margin-left: 20px;
-    width: 60px;
-    height: 60px;
+    margin: 20px;
+    padding: 5px;
+    padding-left: 14px;
+    padding-top: 14px;
+    width: 80px;
+    height: 80px;
     border: 1px  solid white;
     border-radius: 50%;
-    text-align: center;
+    align-content: center;
     color: #ffff;
 }
 
 .social-media-icon:hover{
-
     background-color: #ffff;
     color: #ad5d24;
 }
 
-.social-media-icon i{
-
-    font-size: 30px;
-    line-height: 60px;
-}
-
-#contacto{
+#contacto {
+    height: 300px;
+    width: 100%;
    background-color: rgba(243, 190, 122, 0.952);
 }
 
@@ -321,6 +327,10 @@ background-color: rgb(199, 141, 82);
 
     width: 10%;
 }
+.contenedor-footer-content {
+    display: flex;
+}
+
 .marketing{
 
     width: 300px;
@@ -330,7 +340,7 @@ background-color: rgb(199, 141, 82);
 
     width: 300px;
     height: 300px;
-    justify-content: left;
+    float: right;
 }
 .entrega{
 
@@ -359,6 +369,7 @@ background-color: rgb(199, 141, 82);
 
     margin: 0 auto
 }
+
 .regreso3{
 
     width: 50px;
@@ -371,6 +382,7 @@ background-color: rgb(199, 141, 82);
     width: 150px;
     text-decoration: none;
     box-shadow: #a140e2;
+    transition: 0.6s;
 
 }
 .imagen{
@@ -403,10 +415,11 @@ background-color: rgb(199, 141, 82);
 
 .body{
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+
 }
 .cuerpo{
 
-    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
 }
 
 .video{
@@ -478,9 +491,68 @@ background-color: rgb(199, 141, 82);
         margin: 15px;
     }
 }
+@media only screen and (max-witdh:640px) {
+    .body{
+
+        background-color:rgba(250, 210, 157, 0.952) ;
+        width: 1000px;
+        height: auto;
+        justify-content: space-around;
+        flex-flow: wrap;
+        align-content: center;
+      
+
+    }
+    .menu-navegacion{
+
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .contact-us{
+
+    width: 700px;
+    }
+    .MI{
+
+        width: 700px;
+    }
+    
+}
+.wrapper{
+
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wrapper>*{
+
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+
+}
+
+.footer{
+
+    height: 80px;
+}
+.main{
+
+    text-align: center;
+    height: 300px;
+    font-size: 24px;
+}
+.header{
+
+    height: 450px;
+}
+
+
 .bodyApi{
 
-    background-color: #f78ca0;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -520,7 +592,7 @@ background-color: rgb(199, 141, 82);
 
 button{
 
-    background-color: rgb(241, 9, 125);
+    background-color: rgb(243, 54, 158);
     border: 0;
     border-radius: 4px;
     color: #fff;
