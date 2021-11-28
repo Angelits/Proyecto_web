@@ -8,20 +8,20 @@ cat_btn.addEventListener('click', getRandomCat)
 
 function getRandomCat(){
     fetch('https://aws.random.cat/meow')
-    .then(res => res.json())
+    .then(res => res.json())   
     .then( data => {
-        cat_result.innerHTML = ('data.file')
+        cat_result.innerHTML = "<img src= '"+data["file"]+"'>";
     })
 }
 
 dog_btn.addEventListener('click', getRandomDog)
 
-function getRandonDog(){
+function getRandomDog(){
 
 
     fetch('https://random.dog/woof.json')
     .then(res => res.json())
     .then(data => {
-        dog_result.innerHTML = ('data.url')
+        dog_result.innerHTML = "<img src= '"+data["url"]+"'>";
     })
 }
