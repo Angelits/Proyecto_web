@@ -390,8 +390,8 @@ background-color: rgb(199, 141, 82);
 .imagen{
     display: flex;
     justify-content: center;
-    height: 70%;
-    width: 100%;
+    height: 50%;
+    width: 90%;
     float: center;
    margin: 0 auto;
 }
