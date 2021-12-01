@@ -5,7 +5,6 @@ const dog_btn = document.getElementById('dog_btn');
 
 cat_btn.addEventListener('click', getRandomCat)
 
-
 function getRandomCat(){
     fetch('https://aws.random.cat/meow')
     .then(res => res.json())   
@@ -13,7 +12,6 @@ function getRandomCat(){
         cat_result.innerHTML = "<img src= '"+data["file"]+"'>";
     })
 }
-
 dog_btn.addEventListener('click', getRandomDog)
 
 function getRandomDog(){
