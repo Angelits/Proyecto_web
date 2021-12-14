@@ -395,6 +395,11 @@ background-color: rgb(199, 141, 82);
     float: center;
    margin: 0 auto;
 }
+.correo{
+
+    color: black;
+    
+}
 
 .contenedor-Razones{
     display: flex;
