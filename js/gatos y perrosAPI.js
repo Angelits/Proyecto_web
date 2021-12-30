@@ -16,7 +16,6 @@ dog_btn.addEventListener('click', getRandomDog)
 
 function getRandomDog(){
 
-
     fetch('https://random.dog/woof.json')
     .then(res => res.json())
     .then(data => {
